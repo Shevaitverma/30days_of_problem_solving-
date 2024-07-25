@@ -1,0 +1,21 @@
+---
+school:
+  - name: school A
+    students:
+    - name: John Doe
+      age: 18
+      grade: 9
+    - name: Jane Smith
+      age: 17
+      grade: 10
+    - name: Mark Johnson
+      age: 16
+      grade: 11
+  - name: school B
+    students:
+    - name: Alice Johnson
+      age: 23
+      grade: 10
+    - name: Bob Brown
+      age: 22
+      grade: 11

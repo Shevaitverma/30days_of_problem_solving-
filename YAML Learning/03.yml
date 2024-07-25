@@ -1,0 +1,81 @@
+# advance data types 
+
+stud: !!seq
+  - marks
+  - name 
+  - roll_no
+
+# also sqeuence
+City: [Delhi, mumbai, Jammu, Chandigarh]
+
+# some o f th sequence keys would be empty 
+# known as Sparse seq.
+sparse seq: 
+  - hello
+  - two
+  - 
+  - 
+  - apple
+---
+# nested sequence 
+- 
+  - 1
+  - 2
+  - 3
+-
+  - one
+  - two
+  - three
+---
+# key: pairs known as maps -> !!map 
+# nested mapping 
+name: "shevait"
+role: 
+  age: 23
+  job: SDE
+---
+# or 
+name : "Shevait vemra"
+role: {age:23, job:"SDE"}
+---
+
+# pairs -> keys may have duplicates -> !!pairs
+example: !!pairs
+  - job: SDE
+  - job: SDE1
+---
+# same as 
+example: !!pairs [job: SDE, job: SDE1]
+# this will be an array of hashtables 
+
+# !!set --> unique values 
+names: !!set
+  ? a
+  ? b
+  ? c
+  # ? a  --> This is not allowed 
+
+# dictionary -> !!omap
+data: !!omap 
+  - shevait:
+      name: "shevait verma"
+      age: 23
+  - renil: 
+      name: "renil padman"
+      age: 23
+---
+
+# reusing properties anchors 
+like: &likes
+   fav Fruit: mango 
+   dislike: grapes
+
+person: 
+  name: "shevait verma"
+  <<: *likes
+
+person2: 
+  name: "renil"
+  <<: *likes
+  dislike: pizza # overwrite existing value from the same key 
+

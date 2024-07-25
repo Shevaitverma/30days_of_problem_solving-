@@ -1,0 +1,30 @@
+{
+    "school":[
+        {
+            "name":"School A",
+            "students":[
+                {
+                    "name":"John Doe",
+                    "age":15
+                },
+                {
+                    "name":"Jane Smith",
+                    "age":17
+                }
+            ]
+        },
+        {
+            "name":"School B",
+            "students":[
+                {
+                    "name":"Alice Johnson",
+                    "age":16
+                },
+                {
+                    "name":"Bob Brown",
+                    "age":18
+                }
+            ]
+        }
+    ]
+}

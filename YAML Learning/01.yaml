@@ -1,0 +1,32 @@
+# syntax = key:vale
+
+# this is a comment
+
+data: "this is a data"
+---  # this is document break
+
+# list 
+city:
+  - jammu
+  - mohali
+  - chandigarh
+
+---
+
+# strings 
+name: shevait 
+fruit: "apply, pineapple"
+job: 'DevOps'
+bio: |
+  this is one line 
+  this is another line 
+# single line in multiline 
+message: >
+  this is 
+  same 
+  line dude
+---
+
+
+
+... # this is used to end the documents 

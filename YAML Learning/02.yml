@@ -1,0 +1,35 @@
+# data-types 
+srt: "this is a strign"
+num: 21
+floating number: 12.32
+bool_number: Yes 
+# for boolean true/True/TRUE, yes/y/Y, False/false/FALSE, no/n/N
+
+---
+# how to specify the types
+num: !!int 12
+neg_num: !!int -2
+# binary_num: !!int 0b11001
+oct_num: !!int 06574
+hexa_num: !!int 0x67
+# comma_value: !!int +543_000
+
+--- 
+# float
+num: !!float 12.32
+infinite: !!float .inf
+not_a_num: !!float .nan
+---
+# null or none
+surname: !!null Null # null NULL ~
+~: this is a numm key 
+--- 
+
+# dates and time 
+date: !!timestamp 2023-07-25
+# List of dates and times
+dates_and_times:
+  - date: 2024-07-25
+  - time: 14:30:00
+  - datetime: 2024-07-25T14:30:00Z
+  - datetime_with_timezone: 2024-07-25T14:30:00+02:00
