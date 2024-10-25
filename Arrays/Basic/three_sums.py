@@ -1,4 +1,4 @@
-#####   3 sums:  in an array find all subarrays whose sum is 0
+#####   3 sums:  in an array find all subarrays of three, whose sum is 0
 
 def solve(arr):
     n = len(arr)
