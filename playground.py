@@ -1,19 +1,10 @@
-def solve(arr):
-    unique = []
-    i = 1
-    while i < len(arr):
-        if arr[i-1] == arr[i]:
-            i += 1
-        else:
-            unique.append(arr[i-1])
-            i += 1
-    unique.append(arr[-1])
+def first_repeat(arr):
+    n = len(arr)-1
+    for i in range(n):
+        for j in range(i+1, n+1):
+            if arr[i] == arr[j]:
+                return arr[i]
 
-    #     if i not in unique:
-    #         unique.append(i)
-    return unique
-
-arr = [1,2,3,3,4,4,5,5,5,5,6]
-
-res = solve(arr)
+arr = [1,2,3,4,5,6,5,5,4,4,6,5,7]
+res = first_repeat(arr)
 print(res)
